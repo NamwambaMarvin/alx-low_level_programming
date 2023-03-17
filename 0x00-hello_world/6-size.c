@@ -7,24 +7,24 @@
  */
 int main(void)
 {
-    char m;
-    int n;
-    long int o;
-    long long int x;
-    float p;
+	char m;
+	int n;
+	long int o;
+	long long int x;
+	float p;
 
-    char output[145];  // 144 characters plus null terminator
+	char output[145];
 
-    snprintf(output, sizeof(output),
-             "Size of a char: %zu byte(s)\n"
-             "Size of an int: %zu byte(s)\n"
-             "Size of a long int: %zu byte(s)\n"
-             "Size of a long long int: %zu byte(s)\n"
-             "Size of a float: %zu byte(s)\n",
-             sizeof(m), sizeof(n), sizeof(o), sizeof(x), sizeof(p));
+	snprintf(output, sizeof(output),
+		"Size of a char: %zu byte(s)\n"
+		"Size of an int: %zu byte(s)\n"
+		"Size of a long int: %zu byte(s)\n"
+		"Size of a long long int: %zu byte(s)\n"
+		"Size of a float: %zu byte(s)\n",
+		sizeof(m), sizeof(n), sizeof(o), sizeof(x), sizeof(p));
 
-    printf("%.144s", output);
+	printf("%.144s", output);
 
-    return 0;
+	return (0);
 }
 
