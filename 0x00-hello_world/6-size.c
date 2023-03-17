@@ -1,21 +1,30 @@
 #include <stdio.h>
+
 /**
- * main - Entry point of our main function
- * Return: returns integer zero
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char m;
+    char m;
+    int n;
+    long int o;
+    long long int x;
+    float p;
 
-	int n;
+    char output[145];  // 144 characters plus null terminator
 
-	long int o;
+    snprintf(output, sizeof(output),
+             "Size of a char: %zu byte(s)\n"
+             "Size of an int: %zu byte(s)\n"
+             "Size of a long int: %zu byte(s)\n"
+             "Size of a long long int: %zu byte(s)\n"
+             "Size of a float: %zu byte(s)\n",
+             sizeof(m), sizeof(n), sizeof(o), sizeof(x), sizeof(p));
 
-	long long int x;
+    printf("%.144s", output);
 
-	float p;
-
-	printf("Size of a char: %d bytes(s)\nSize of an int: %d bytes(s)\nSize of a long int: %d bytes(s)\nSize of a long long int: %d bytes(s)\nSize of a float: %d bytes(s)", sizeof(m), sizeof(n), sizeof(o), sizeof(x), sizeof(p));
-	return (0);
+    return 0;
 }
 
