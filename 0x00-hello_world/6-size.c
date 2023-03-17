@@ -15,7 +15,7 @@ int main(void)
 
 	float p;
 
-	printf("Size of a char: %d bytes(s)\nSize of an int: %d bytes(s)\nSize of a long int: %d bytes(s)\nSize of a long long int: %d bytes(s)\nSize of a float: %d bytes(s)", sizeof(m), sizeof(n), sizeof(o), sizeof(x), sizeof(p))
+	printf("Size of a char: %d bytes(s)\nSize of an int: %d bytes(s)\nSize of a long int: %d bytes(s)\nSize of a long long int: %d bytes(s)\nSize of a float: %d bytes(s)", sizeof(m), sizeof(n), sizeof(o), sizeof(x), sizeof(p));
 	return (0);
 }
 
