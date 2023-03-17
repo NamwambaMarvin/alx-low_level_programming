@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - Entry point of our main function
  * Return: returns integer zero
