@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * Main function is the entry point of our program
+ * main - This is the entry point of our program
+ * Return: 0 beacuse nothing to do
  */
 int main(void)
 {
-	/*Main function description here*/
 	char output[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(output);
