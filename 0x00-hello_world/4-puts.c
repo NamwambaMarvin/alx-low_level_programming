@@ -1,4 +1,5 @@
 #include <stdio.h>
+/*Main function is the entry point of our program*/
 int main(void)
 {
 	/*Main function description here*/
