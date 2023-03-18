@@ -19,7 +19,7 @@ int main(void)
 		{
 			for (Tnum = 0; Tnum < 10; ++Tnum)
 			{
-				for (Ftnum = Snum + 1; Ftnum < 10; ++Ftnum)
+				for (Ftnum = Fnum + 1; Ftnum < 10; ++Ftnum)
 				{
 					putchar(Fnum + '0');
 					putchar(Snum + '0');
