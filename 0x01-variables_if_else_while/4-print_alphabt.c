@@ -7,7 +7,7 @@ int main(void)
 {
 	int alpha;
 
-	for (alpha = 'a'; alpha = 'z'; ++alpha)
+	for (alpha = 'a'; alpha <= 'z'; ++alpha)
 	{
 		if (alpha == 'e')
 		{
@@ -18,6 +18,7 @@ int main(void)
 			continue;
 		};
 		putchar(alpha);
-		return (0);
 	}
+	putchar('\n');
+	return (0);
 }
