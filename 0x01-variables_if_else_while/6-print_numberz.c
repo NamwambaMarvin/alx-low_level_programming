@@ -7,9 +7,13 @@ int main(void)
 {
 	int link;
 
-	for (link = 0; link <= 10; ++link)
+	for (link = 0; link < 10; ++link)
 	{
-		putchar('0' + link);
+		if (link == ':')
+		{
+			continue;
+		}
+		putchar(link + '0');
 	};
 	putchar('\n');
 	return (0);
