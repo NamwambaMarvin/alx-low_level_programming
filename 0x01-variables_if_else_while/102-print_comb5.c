@@ -13,10 +13,14 @@ int main(void)
 		{
 			putchar((Fcomb / 10) + '0');
 			putchar((Fcomb % 10) + '0');
-			putchar(',');
 			putchar(' ');
 			putchar((Scomb / 10) + '0');
 			putchar((Scomb % 10) + '0');
+			if (Fcomb == 98 && Scomb == 99)
+			{
+				continue;
+			}
+			putchar(',');
 			putchar(' ');
 		}
 	}
