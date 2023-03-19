@@ -18,7 +18,7 @@ int main(void)
 			putchar((Scomb / 10) + '0');
 			putchar((Scomb % 10) + '0');
 			putchar(' ');
-		};
-	};
+		}
+	}
 	putchar('\n');
-};
+}
