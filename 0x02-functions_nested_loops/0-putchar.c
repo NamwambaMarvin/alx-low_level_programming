@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <string.h>
+#include "main.h"
 /**
  * main - entry point of the program
  * Return: - Always 0 (SUCCESS)
