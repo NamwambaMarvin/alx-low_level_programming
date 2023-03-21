@@ -8,7 +8,7 @@ void print_alphabet_x10(void)
 {
 	int counter = 0;
 
-	while (counter <= 10)
+	while (counter <= 9)
 	{
 		int i;
 
@@ -17,6 +17,6 @@ void print_alphabet_x10(void)
 			_putchar(i);
 		}
 		_putchar('\n');
-		counter = counter + 1;
+		++counter;
 	}
 }
