@@ -9,10 +9,6 @@ int main(void)
 
 	for (link = 0; link < 10; ++link)
 	{
-		if (link == ':')
-		{
-			continue;
-		}
 		putchar(link + '0');
 	};
 	putchar('\n');
