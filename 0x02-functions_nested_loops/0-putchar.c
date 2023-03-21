@@ -1,10 +1,10 @@
 #include <unistd.h>
 #include <string.h>
-#include "main.h"
 /**
  * main - entry point of the program
  * Return: - Always 0 (SUCCESS)
  */
+int _putchar(char c);
 int main(void)
 {
 	char mycharacter[] = "_putchar\n";
