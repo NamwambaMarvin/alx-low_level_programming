@@ -7,13 +7,11 @@
 int main(void)
 {
 	char mycharacter[] = "_putchar\n";
-	
 	size_t i;
 
 	for (i = 0; i < strlen(mycharacter); ++i)
 	{
 		_putchar(mycharacter[i]);
 	}
-
 	return (0);
 }
