@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * print_alphabet - prints all aphabetical letters
  * Return: Always 0 (SUCCESS)
@@ -12,5 +12,4 @@ void print_alphabet(void)
 		_putchar(i);
 	}
 	_putchar('\n');
-	return (0);
 }
