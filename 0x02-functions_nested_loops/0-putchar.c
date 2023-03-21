@@ -9,7 +9,7 @@ int main(void)
 {
 	char mycharacter[] = "_putchar\n";
 	
-	int i;
+	size_t i;
 
 	for (i = 0; i < strlen(mycharacter); ++i)
 	{
