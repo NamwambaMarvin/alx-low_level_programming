@@ -16,7 +16,9 @@ void times_table(void)
 		{
 			holder = multiplier * j;
 			_putchar(holder + '0');
-			_putchar(',  ');
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
 		}
 		_putchar('\n');
 	}
