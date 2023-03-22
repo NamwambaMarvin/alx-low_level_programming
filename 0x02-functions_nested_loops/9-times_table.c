@@ -27,17 +27,10 @@ void times_table(void)
 			} else
 			{
 				_putchar(holder + '0');
-				if (((multiplier + 1) * (j + 1)) > 9)
+				_putchar(',');
+				_putchar(' ');
+				if ((multiplier + 1) * (j + 1) > 9)
 				{
-					_putchar(',');
-					_putchar(' ');
-				} else if (j == 9)
-				{
-				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
 			}
