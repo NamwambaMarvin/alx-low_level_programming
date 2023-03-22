@@ -6,7 +6,7 @@
  */
 void print_to_98(int n)
 {
-	int i;
+	int i, limit = 98;
 
 	if (n > 98)
 	{
@@ -22,6 +22,6 @@ void print_to_98(int n)
 		}
 	} else
 	{
-		_putchar("98" + '0');
+		_putchar(limit + '0');
 	}
 }
