@@ -16,11 +16,8 @@ void times_table(void)
 			holder = multiplier * j;
 			if (holder > 9)
 			{
-				if (j < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
 				_putchar((holder / 10) + '0');
 				_putchar((holder % 10) + '0');
 			} else
