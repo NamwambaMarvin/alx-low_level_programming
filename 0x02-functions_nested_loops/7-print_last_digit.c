@@ -9,7 +9,11 @@ int print_last_digit(int value_under_test)
 {
 	int lastdigit;
 
-	lastdigit = abs(value_under_test) % 10;
+	if (value_under_test < 1)
+	{
+		value_under_test *= -1
+	}
+	lastdigit = value_under_test % 10;
 
 	_putchar('0' + lastdigit);
 	return (lastdigit);
