@@ -1,21 +1,23 @@
 #include "main.h"
 /**
  * times_table - prints the 9x9 table
- * Return: returns final value 
+ * Return: returns final value
  */
 void times_table(void)
 {
-	int rows;
+	int multiplier = 0;
 
-	int column;
+	int i, j, holder;
 
-	for (column = 0; column < 10; ++column)
+	for (i = 0; i < 10; ++i)
 	{
-		for ((row = column + 1); row < 10; ++row)
+		_putchar(multiplier + '0');
+		for (j = 0; j < 10; ++j)
 		{
-			_putchar(column + '0');
-			_putchar(row + '0');
-			_putchar('\n');
+			holder = multiplier * j;
+			_putchar(holder + '0');
+			_putchar(',  ');
 		}
+		_putchar('\n');
 	}
 }
