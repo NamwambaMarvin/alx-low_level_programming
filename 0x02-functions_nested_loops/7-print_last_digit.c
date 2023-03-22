@@ -11,7 +11,7 @@ int print_last_digit(int value_under_test)
 
 	if (value_under_test < 1)
 	{
-		value_under_test *= -1
+		value_under_test *= -1;
 	}
 	lastdigit = value_under_test % 10;
 
