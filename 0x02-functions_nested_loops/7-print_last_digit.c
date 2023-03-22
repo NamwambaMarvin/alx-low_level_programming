@@ -9,7 +9,7 @@ int print_last_digit(int value_under_test)
 {
 	int lastdigit;
 
-	if (value_under_test < 1)
+	if (value_under_test < 0)
 	{
 		value_under_test *= -1;
 	}
