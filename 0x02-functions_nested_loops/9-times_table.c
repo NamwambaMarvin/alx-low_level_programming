@@ -31,9 +31,20 @@ void times_table(void)
 				{
 					continue;
 				}
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if ((multiplier * j) > 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				} else
+				{
+					if (j == 9)
+					{
+						continue;
+					}
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
