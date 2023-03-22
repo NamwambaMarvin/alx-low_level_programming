@@ -33,7 +33,10 @@ void times_table(void)
 				}
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
+				if (multiplier * (j + 1)) >= 10)
+				{
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
