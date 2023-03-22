@@ -13,14 +13,16 @@ void print_to_98(int n)
 		for (i = n; i > 97; --i)
 		{
 			_putchar(i);
-			_putchar(', ');
+			_putchar(',');
+			_putchar(' ')'
 		}
 	} else if (n < 98)
 	{
 		for (i = n; i < 99; ++i)
 		{
 			_putchar(i);
-			_putchar(', ');
+			_putchar(',');
+			_putchar(' ');
 		}
 	} else
 	{

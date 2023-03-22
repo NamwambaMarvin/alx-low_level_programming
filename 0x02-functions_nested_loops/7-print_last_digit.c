@@ -15,6 +15,6 @@ int print_last_digit(int value_under_test)
 	}
 	lastdigit = value_under_test % 10;
 
-	_putchar('0' + lastdigit);
+	_putchar(lastdigit + '0');
 	return (lastdigit);
 }
