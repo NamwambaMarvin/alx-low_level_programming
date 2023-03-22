@@ -46,3 +46,9 @@ int _abs(int);
 int print_last_digit(int value_under_test);
 
 #endif
+#ifndef _JACK_
+#define _JACK_
+
+void jack_bauer(void);
+
+#endif
