@@ -18,8 +18,10 @@ void times_table(void)
 			{
 				_putchar((holder / 10) + '0');
 				_putchar((holder % 10) + '0');
+			} else
+			{
+				_putchar(holder + '0');
 			}
-			_putchar(holder + '0');
 			if (j == 9)
 			{
 				continue;
