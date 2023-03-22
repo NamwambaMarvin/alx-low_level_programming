@@ -7,7 +7,7 @@
  */
 void print_to_98(int n)
 {
-	int i;
+	signed int i;
 
 	if (n <= 98)
 	{
@@ -15,20 +15,20 @@ void print_to_98(int n)
 		{
 			if (i < 10)
 			{
-				_putchar((i / 10) + '0');
+				printf("%d ", (i / 10));
 			}
 			else
 			{
-				_putchar((i / 10) + '0');
-				_putchar((abs(i) % 10) + '0');
+				printf("%d ", (i / 10));
+				printf("%d ",(abs(i) % 10));
 			}
 		}
 	} else if (n >= 98)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
+			printf("%d ", (i / 10));
+			printf("%d ", (i % 10));
 		}
 	}
 }
