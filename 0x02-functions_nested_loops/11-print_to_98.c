@@ -12,16 +12,19 @@ void print_to_98(int n)
 	{
 		for (i = n; i > 97; --i)
 		{
-			_putchar(i + '0');
+			_putchar(i);
+			_putchar(', ');
 		}
 	} else if (n < 98)
 	{
 		for (i = n; i < 99; ++i)
 		{
-			_putchar(i + '0');
+			_putchar(i);
+			_putchar(', ');
 		}
 	} else
 	{
-		_putchar(limit + '0');
+		_putchar(limit);
 	}
+	_putchar('\n');
 }
