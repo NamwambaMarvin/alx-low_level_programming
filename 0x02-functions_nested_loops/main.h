@@ -52,3 +52,15 @@ int print_last_digit(int value_under_test);
 void jack_bauer(void);
 
 #endif
+#ifndef _TIMES9_
+#define _TIMES9_
+
+void times_table(void);
+
+#endif
+#ifndef _ADD_
+#define _ADD_
+
+int add(int, int);
+
+#endif
