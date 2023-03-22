@@ -43,6 +43,6 @@ int _abs(int);
 #ifndef _LASTVALUE_
 #define _LASTVALUE_
 
-int print_last_digit(int);
+int print_last_digit(int value_under_test);
 
 #endif
