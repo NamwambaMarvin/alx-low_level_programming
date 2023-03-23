@@ -46,4 +46,9 @@ void more_numbers(void);
 void print_line(int n);
 
 #endif
+#ifndef _DIAGONAL_
+#define _DIAGONAL_
 
+void print_diagonal(int n);
+
+#endif
