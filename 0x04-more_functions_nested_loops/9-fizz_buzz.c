@@ -2,8 +2,9 @@
 #include <stdio.h>
 /**
  * main - The fizz Buzz program
+ * Return: Always 0 (SUCCESS)
  */
-void main(void)
+int main(void)
 {
 	int counter;
 
@@ -24,4 +25,5 @@ void main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
