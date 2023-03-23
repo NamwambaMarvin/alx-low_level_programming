@@ -18,8 +18,13 @@ void print_times_table(int n)
 				product = i * j;
 				printf(",");
 				printf(" ");
-				printf(" ");
 				if (product < 10)
+				{
+					printf(" ");
+					printf(" ");
+					printf("%d", product);
+				}
+				else if (product > 10 && product < 100)
 				{
 					printf(" ");
 					printf("%d", product);
