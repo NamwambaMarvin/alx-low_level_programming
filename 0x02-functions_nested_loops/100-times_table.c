@@ -1,5 +1,4 @@
-#include "main"
-#include <stdio.h>
+#include "main.h"
 /**
  * print_times_table - Description of the function
  * @n: - Parameter to be parsed
