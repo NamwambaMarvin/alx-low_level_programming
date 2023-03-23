@@ -30,7 +30,7 @@ void print_times_table(int n)
 					printf("%d", (product % 10));
 				}
 			}
-			prinf("\n");
+			printf("\n");
 		}
 	} else if (n == 0)
 	{
