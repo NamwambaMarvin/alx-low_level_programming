@@ -28,3 +28,9 @@ int mul(int a, int b);
 void print_numbers(void);
 
 #endif
+#ifndef _NUMBERS_
+#define _NUMBERS_
+
+void print_most_numbers(void);
+
+#endif
