@@ -1,0 +1,24 @@
+#include "main.h"
+/**
+ * print_square - Main code to create the square
+ * @size: Size of the square to be printed
+ */
+void print_square(int size)
+{
+	int row, column;
+
+	if (size > 0)
+	{
+		for (row = 0; row < size; row++)
+		{
+			for (column = 0; column < size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	} else
+	{
+		_putchar('\n');
+	}
+}
