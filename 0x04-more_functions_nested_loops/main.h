@@ -10,3 +10,9 @@ int _isupper(int c);
 int _isdigit(int c);
 
 #endif
+#ifndef _MULTIPLY_
+#define _MULTIPLY_
+
+int mul(int a, int b);
+
+#endif
