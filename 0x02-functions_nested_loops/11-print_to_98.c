@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_to_98 - Prints the first n numbers
  * @n: - Stsrting number
