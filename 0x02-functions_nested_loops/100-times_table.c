@@ -16,7 +16,7 @@ void print_times_table(int n)
 			for (j = 1; j < (n + 1); ++j)
 			{
 				product = i * j;
-				printf(',');
+				printf(",");
 				_putchar(' ');
 				_putchar(' ');
 				if (product < 10)
