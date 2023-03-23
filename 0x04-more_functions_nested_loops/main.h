@@ -1,3 +1,9 @@
+#ifndef _PUTCHAR_
+#define _PUTCHAR_
+
+int _putchar(char c);
+
+#endif
 #ifndef _ISUPPER_
 #define _ISUPPER_
 
