@@ -12,29 +12,29 @@ void print_times_table(int n)
 	{
 		for (i = 0; i < (n + 1); ++i)
 		{
-			_putchar('0');
+			printf("0");
 			for (j = 1; j < (n + 1); ++j)
 			{
 				product = i * j;
 				printf(",");
-				_putchar(' ');
-				_putchar(' ');
+				printf(" ");
+				printf(" ");
 				if (product < 10)
 				{
-					_putchar(' ');
-					_putchar((product % 10) + 48);
+					printf(" ");
+					printf("%d", (product % 10));
 				}
 				else
 				{
-					_putchar((product / 10) + 48);
-					_putchar((product % 10) + 48);
+					printf("%d", (product / 10));
+					printf("%d", (product % 10));
 				}
 			}
-			_putchar('\n');
+			prinf("\n");
 		}
 	} else if (n == 0)
 	{
-		_putchar('0');
-		_putchar('\n');
+		printf("0");
+		printf("\n");
 	}
 }
