@@ -6,7 +6,7 @@ void print_most_numbers(void)
 {
 	int index;
 
-	for (index = 0; index < 10; i++)
+	for (index = 0; index < 10; index++)
 	{
 		if ((index == 2) || (index == 4))
 		{
