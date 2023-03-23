@@ -6,7 +6,7 @@ void more_numbers(void)
 {
 	int px10, upto14;
 
-	for (px10 = 0; px10 < 11; px10++)
+	for (px10 = 0; px10 < 10; px10++)
 	{
 		for (upto14 = 0; upto14 < 15; upto14++)
 		{
