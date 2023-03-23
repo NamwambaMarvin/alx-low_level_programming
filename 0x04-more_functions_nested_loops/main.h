@@ -52,8 +52,8 @@ void print_line(int n);
 void print_diagonal(int n);
 
 #endif
-#ifndef
-#define
+#ifndef _SQUARE_
+#define _SQUARE_
 
 void print_square(int size);
 
