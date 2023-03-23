@@ -12,17 +12,22 @@ int main(void)
 	{
 		if ((counter % 3) == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		} else if ((counter % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		} else if (((counter % 3) == 0) && ((counter % 5) == 0))
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		} else
 		{
-			printf("%d ", counter);
+			printf("%d", counter);
 		}
+		if (counter == 100)
+		{
+			continue;
+		}
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
