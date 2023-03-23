@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - Description of the function
  * @n: - Parameter to be parsed
@@ -15,7 +16,7 @@ void print_times_table(int n)
 			for (j = 1; j < (n + 1); ++j)
 			{
 				product = i * j;
-				_putchar(',');
+				printf(',');
 				_putchar(' ');
 				_putchar(' ');
 				if (product < 10)
