@@ -6,24 +6,22 @@
  * @a: first integer
  * @b: second integer
  * @c: third integer
- * Return: Always 0 (SUCCESS)
+ * Return: largest
  */
 
 int largest_number(int a, int b, int c)
 {
 	int largest = 0;
 
-	int index;
-
-	int all[3] = {a, b, c};
-
-	for (index = 0; index <= 3; index++)
+	if ((a > b) && (a > c))
 	{
-		if (all[index] > largest)
-		{
-			largest = all[index];
-		}
+		largest = a;
+	} else if ((b > a) && (b > c))
+	{
+		largest = b;
+	} else if ((c > a) && (c > b))
+	{
+		largest = c;
 	}
-	printf("%d", largest);
-	return (0);
+	return (largest);
 }
