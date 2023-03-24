@@ -9,10 +9,10 @@ int main(void)
 
 	for (counter = 1; counter < 101; counter++)
 	{
-		if ((counter % 3) == 0)
+		if ((counter % 3) == 0 && (counter % 5) != 0)
 		{
 			printf("Fizz");
-		} else if ((counter % 5) == 0)
+		} else if (((counter % 5) == 0) && (counter % 3) != 0)
 		{
 			printf("Buzz");
 		} else if (((counter % 3) == 0) && ((counter % 5) == 0))
