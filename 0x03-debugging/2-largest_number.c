@@ -10,7 +10,9 @@
 
 int largest_number(int a, int b, int c)
 {
-	int largest = 0, index;
+	int largest = 0;
+
+	int index;
 
 	int all[3] = {a, b, c};
 
