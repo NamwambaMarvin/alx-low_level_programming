@@ -6,7 +6,7 @@
  * @a: first integer
  * @b: second integer
  * @c: third integer
- * Return: largest number
+ * Return: Always 0 (SUCCESS)
  */
 
 int largest_number(int a, int b, int c)
@@ -15,7 +15,7 @@ int largest_number(int a, int b, int c)
 
 	int index;
 
-	int *all[] = {a, b, c};
+	int all[3] = {a, b, c};
 
 	for (index = 0; index <= 3; index++)
 	{
@@ -25,5 +25,5 @@ int largest_number(int a, int b, int c)
 		}
 	}
 	printf("%d", largest);
-	return (largest);
+	return (0);
 }
