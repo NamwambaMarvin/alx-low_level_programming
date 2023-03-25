@@ -2,13 +2,13 @@
 #include <stdio.h>
 /**
  * main - finrd the lsrgest prime factor of the given number
- * Return: Always (void)
+ * Return: max prime factor
  */
-void main(void)
+int main(void)
 {
 	long int n = 612852475143;
 
-	long int diviser = 2, answer = 0, maxFactor;
+	long int diviser = 2, maxFactor;
 
 	while (n != 0)
 	{
@@ -21,10 +21,10 @@ void main(void)
 			n = n / diviser;
 			if (n == 1)
 			{
-				printf("%d",maxFactor)
+				printf("%ld",maxFactor);
 			}
-			answer = 1;
 			break;
 		}
 	}
+	return (maxFactor);
 }
