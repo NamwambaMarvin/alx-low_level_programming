@@ -21,7 +21,7 @@ int main(void)
 			n = n / diviser;
 			if (n == 1)
 			{
-				printf("%ld",maxFactor);
+				printf("%ld", maxFactor);
 			}
 			break;
 		}
