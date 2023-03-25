@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_triangle(int size); - Print triangles
+ * print_triangle - Print triangles
  * @size: Size of the triangle
  */
 void print_triangle(int size)
@@ -11,16 +11,22 @@ void print_triangle(int size)
 
 	int hash;
 
-	for (columns = 0; columns < size; columns++)
+	if (size > 0)
 	{
-		for (space = 1; space < size - columns; space++)
+		for (columns = 0; columns < size; columns++)
 		{
-			_putchar(' ');
+			for (space = 1; space < size - columns; space++)
+			{
+				_putchar(' ');
+			}
+			for (hash = 0; hash <= columns; hash++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		for (hash = 0; hash <= columns; hash++)
-		{
-			_putchar('#');
-		}
+	} else
+	{
 		_putchar('\n');
 	}
 }
