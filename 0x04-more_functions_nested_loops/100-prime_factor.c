@@ -22,10 +22,10 @@ int main(void)
 			if (n == 1)
 			{
 				printf("%ld", maxFactor);
+				break;
 			}
-			break;
 		}
 	}
-	return (maxFactor);
 	printf("\n");
+	return (0);
 }
