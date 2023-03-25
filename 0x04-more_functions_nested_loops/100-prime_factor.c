@@ -6,9 +6,7 @@
  */
 void main(void)
 {
-	long int number = 612852475143;
-
-	long int n;
+	long int n = 612852475143;
 
 	long int diviser = 2, answer = 0, maxFactor;
 
