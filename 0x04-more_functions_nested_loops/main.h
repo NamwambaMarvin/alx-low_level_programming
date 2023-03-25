@@ -58,3 +58,9 @@ void print_diagonal(int n);
 void print_square(int size);
 
 #endif
+#ifndef _TRIANGLE_
+#define _TRIANGLE_
+
+void print_triangle(int size);
+
+#endif
