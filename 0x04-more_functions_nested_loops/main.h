@@ -64,3 +64,9 @@ void print_square(int size);
 void print_triangle(int size);
 
 #endif
+#ifndef _INT_
+#define _INT_
+
+void print_number(int n);
+
+#endif
