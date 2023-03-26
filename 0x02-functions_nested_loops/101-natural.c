@@ -8,7 +8,7 @@ int main(void)
 {
 	int Fmultiple = 3, Smultiple = 5;
 
-	int sum;
+	int sum = 0;
 
 	int limit = 1024;
 
