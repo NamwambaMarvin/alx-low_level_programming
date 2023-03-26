@@ -7,7 +7,7 @@ int main(void)
 {
 	int f2 = 1, f3 = 2;
 
-	unsigned int next_term = f2 + f3;
+	long int next_term = f2 + f3;
 
 	int i, n = 50;
 
@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 4; i <= n; ++i)
 	{
-		printf(", %d", next_term);
+		printf(", %lu", next_term);
 		f2 = f3;
 		f3 = next_term;
 		next_term = f2 + f3;
