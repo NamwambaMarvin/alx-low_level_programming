@@ -5,15 +5,15 @@
  */
 int main(void)
 {
-	int f2 = 1, f3 = 2;
+	long int f2 = 1, f3 = 2;
 
 	long int next_term = f2 + f3;
 
 	int i, n = 50;
 
-	printf("%d, %d", f2, f3);
+	printf("%lu, %lu", f2, f3);
 
-	for (i = 4; i <= n; ++i)
+	for (i = 3; i <= n; ++i)
 	{
 		printf(", %lu", next_term);
 		f2 = f3;
