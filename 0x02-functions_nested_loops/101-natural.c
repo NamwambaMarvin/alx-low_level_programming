@@ -16,11 +16,12 @@ int main(void)
 
 	for (node = 0; node < limit; node++)
 	{
-		if (((node % Fmultiple) || node % Smultiple) == 0)
+		if ((node % Fmultiple == 0) || (node % Smultiple == 0))
 		{
 			sum += node;
 		}
 	}
-	return (sum);
+	printf("%d", sum);
 	printf("\n");
+	return (0);
 }
