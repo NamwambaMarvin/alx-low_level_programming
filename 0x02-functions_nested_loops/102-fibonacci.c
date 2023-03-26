@@ -5,20 +5,21 @@
  */
 int main(void)
 {
-	int f1 = 0, f2 = 1;
+	int f2 = 1, f3 = 1;
 
-	int next_term = f1 + f2;
+	unsigned int next_term = f2 + f3;
 
 	int i, n = 50;
 
-	printf("%d, %d", f1, f2);
+	printf("%d, %d", f2, f3);
 
-	for (i = 3; i <= n; ++i)
+	for (i = 4; i <= n; ++i)
 	{
 		printf(", %d", next_term);
-		f1 = f2;
-		f2 = next_term;
-		next_term = f1 + f2;
+		f2 = f3;
+		f3 = next_term;
+		next_term = f2 + f3;
 	}
+	printf("\n");
 	return (0);
 }
