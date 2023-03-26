@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int f2 = 1, f3 = 1;
+	int f2 = 1, f3 = 2;
 
 	unsigned int next_term = f2 + f3;
 
