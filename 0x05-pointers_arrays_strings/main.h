@@ -10,3 +10,9 @@ int _putchar(char c);
 void reset_to_98(int *n);
 
 #endif
+#ifndef _SWAP_
+#define _SWAP_
+
+void swap_int(int *a, int *b);
+
+#endif
