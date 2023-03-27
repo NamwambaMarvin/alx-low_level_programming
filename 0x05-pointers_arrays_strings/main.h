@@ -28,8 +28,8 @@ int _strlen(char *s);
 void _puts(char *str);
 
 #endif
-#ifndef
-#define
+#ifndef _STRINGREV_
+#define _STRINGREV_
 
 void print_rev(char *s);
 
