@@ -16,3 +16,9 @@ void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 
 #endif
+#ifndef _LENGTH_
+#define _LENGTH_
+
+int _strlen(char *s);
+
+#endif
