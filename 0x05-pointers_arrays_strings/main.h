@@ -22,3 +22,9 @@ void swap_int(int *a, int *b);
 int _strlen(char *s);
 
 #endif
+#ifndef _PRINTSTRING_
+#define _PRINTSTRING_
+
+void _puts(char *str);
+
+#endif
