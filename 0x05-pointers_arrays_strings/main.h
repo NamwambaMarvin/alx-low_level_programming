@@ -28,3 +28,9 @@ int _strlen(char *s);
 void _puts(char *str);
 
 #endif
+#ifndef
+#define
+
+void print_rev(char *s);
+
+#endif
