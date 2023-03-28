@@ -64,3 +64,10 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
 #endif
+
+#ifndef _ATOI_
+#define _ATOI_
+
+int _atoi(char *s);
+
+#endif
