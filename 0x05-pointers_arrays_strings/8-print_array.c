@@ -10,10 +10,13 @@ void print_array(int *a, int n)
 {
 	int index;
 
-	printf("%d", a[0]);
-	for (index = 1; index < n; index++)
+	while (n > 0)
 	{
-		printf(", %d", a[index]);
+		printf("%d", a[0]);
+		for (index = 1; index < n; index++)
+		{
+			printf(", %d", a[index]);
+		}
 	}
 	printf("\n");
 }
