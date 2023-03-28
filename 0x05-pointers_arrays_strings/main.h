@@ -40,3 +40,9 @@ void print_rev(char *s);
 void rev_string(char *s);
 
 #endif
+#ifndef _EVERYOTHERCHARACTER_
+#define _EVERYOTHERCHARACTER_
+
+void puts2(char *str);
+
+#endif
