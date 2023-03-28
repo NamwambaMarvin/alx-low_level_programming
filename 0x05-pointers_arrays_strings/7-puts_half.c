@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * puts_half - Prints half characters of a string
  * @str: String under test
@@ -7,24 +7,24 @@
  */
 void puts_half(char *str)
 {
-	int string_length = strlen(str);
+	int length = 0, n, i;
 
-	int  half_length = (string_length - 1) / 2;
-
-	int i;
-
-	if (string_length % 2 == 0)
+	while (str[length] != '\0')
 	{
-		for (i = 0; i < half_length; i++)
+		length++;
+	}
+	if (length % 2 == 0)
+	{
+		for (i = 0; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);
 		}
-		_putchar('\n');
 	} else
 	{
-		for (i = half_length + 1; i <= string_length; i++)
+		for (n = (length - 1) / 2; n < length / 2; n++)
 		{
-			_putchar(str[i]);
+			_putchar(str[n + 1]);
 		}
 	}
+	_putchar('\n');
 }
