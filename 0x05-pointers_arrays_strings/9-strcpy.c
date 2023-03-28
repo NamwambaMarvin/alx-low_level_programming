@@ -2,8 +2,8 @@
 #include <string.h>
 /**
  * _strcpy - copoiies string to the buffer
- * @dest - final destination od=f the copied string
- * @scr - source of thee string
+ * @dest: Final destination od=f the copied string
+ * @scr: Source of thee string
  * Return: destination of copied string
  */
 char *_strcpy(char *dest, char *src)
