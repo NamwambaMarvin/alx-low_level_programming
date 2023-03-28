@@ -52,3 +52,9 @@ void puts2(char *str);
 void puts_half(char *str);
 
 #endif
+#ifndef _ARRAYN_
+#define _ARRAYN_
+
+void print_array(int *a, int n);
+
+#endif
