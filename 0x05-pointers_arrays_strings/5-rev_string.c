@@ -8,7 +8,7 @@
  */
 void rev_string(char *s)
 {
-	int l = stlen(s);
+	int l = strlen(s);
 
 	int i;
 
@@ -20,7 +20,7 @@ void rev_string(char *s)
 	{
 		end_pointer++;
 	}
-	for (i = 0; i = l / 2; i++)
+	for (i = 0; i = (l / 2); i++)
 	{
 		ch = *end_pointer;
 		*end_pointer = *begin_pointer;
