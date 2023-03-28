@@ -46,3 +46,9 @@ void rev_string(char *s);
 void puts2(char *str);
 
 #endif
+#ifndef _HALF_
+#define _HALF_
+
+void puts_half(char *str);
+
+#endif
