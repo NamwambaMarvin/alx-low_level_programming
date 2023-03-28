@@ -58,3 +58,9 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 
 #endif
+#ifndef _COPY_
+#define _COPY_
+
+char *_strcpy(char *dest, char *src);
+
+#endif
