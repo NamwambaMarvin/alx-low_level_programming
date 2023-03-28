@@ -34,3 +34,9 @@ void _puts(char *str);
 void print_rev(char *s);
 
 #endif
+#ifndef _REVERSE_
+#define _REVERSE_
+
+void rev_string(char *s);
+
+#endif
