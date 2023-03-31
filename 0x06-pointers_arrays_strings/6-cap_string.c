@@ -10,7 +10,7 @@ char *cap_string(char *str)
 
 	char *c = {' ',',',';','.','!','?','"','(',')','{','}'};
 
-	int array_length = sizeof(t) / sizeof(t[0]);
+	int array_length = sizeof(c) / sizeof(c[0]);
 
 	if (str[0] >= 'a' && str[0] <= 'z')
 	{
