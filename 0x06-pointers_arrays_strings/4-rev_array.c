@@ -6,10 +6,16 @@
  */
 void reverse_array(int *a, int n)
 {
-	int index;
+	int index, reve;
 
-	for (index = n; index >= 0; index--)
+	n = n - 1;
+
+	reve = 0;
+
+	while (reve <= n)
 	{
-		_putchar(a[index] + '0');
+		index = a[reve];
+		a[reve++] = a[n];
+		a[n--] = temp;
 	}
 }
