@@ -10,3 +10,9 @@ char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 
 #endif
+#ifndef _STRCOPY_
+#define _STRCOPY_
+
+char *_strncpy(char *dest, char *src, int n);
+
+#endif
