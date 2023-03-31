@@ -8,7 +8,7 @@ char *cap_string(char *str)
 {
 	int i = 0, j = 0;
 
-	char *c = {' ',',',';','.','!','?','"','(',')','{','}'};
+	char *c[] = {' ',',',';','.','!','?','"','(',')','{','}'};
 
 	int array_length = sizeof(c) / sizeof(c[0]);
 
