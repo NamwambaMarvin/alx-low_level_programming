@@ -34,3 +34,9 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 
 #endif
+#ifndef _CAPITALIZE_
+#define _CAPITALIZE_
+
+char *cap_string(char *);
+
+#endif

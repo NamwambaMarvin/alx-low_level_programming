@@ -8,9 +8,7 @@ char *string_toupper(char *str)
 {
 	int index;
 
-	int length = sizeof(str) / sizeof(char);
-
-	for (index = 0; index < length; index++)
+	for (index = 0; str[index] != '\0'; index++)
 	{
 		if (str[index] >= 97 && str[index] <= 122)
 		{
