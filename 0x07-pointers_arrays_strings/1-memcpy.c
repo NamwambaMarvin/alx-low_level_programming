@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+#include <stdio.h>
 /**
  *_memcpy - Copies characters of a buffer to the destination
  *@dest: Destination of the copied content
@@ -8,11 +10,11 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *pointer_to_dest = char *dest;
+	char *pointer_to_dest = dest;
 
-	char *pointer_to_src = char *src;
+	char *pointer_to_src = src;
 
-	if ((*pointer_to_dest != NULL) && (*pointer_to_src != NULL))
+	if (*pointer_to_src != '\0')
 	{
 		while (n)
 		{
