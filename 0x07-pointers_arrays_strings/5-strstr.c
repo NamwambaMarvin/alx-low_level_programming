@@ -9,5 +9,9 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	strstr(haystack, needle);
+	if (strstr(haystack, needle))
+	{
+		return (strstr(haystack, needle));
+	}
+	return (NULL);
 }
