@@ -10,3 +10,15 @@ char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 
 #endif
+#ifndef _FIND_
+#define _FIND_
+
+unsigned int _strspn(char *s, char *accept);
+
+#endif
+#ifndef _LOCATE_
+#define _LOCATE_
+
+char *_strchr(char *s, char c);
+
+#endif
