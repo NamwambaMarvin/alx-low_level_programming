@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  *_strspn - Finds the first occurence of a character
  *@s: - Sting to be passed to the function
