@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <string.h>
 /**
  *_strspn - Finds the first occurence of a character
  *@s: - Sting to be passed to the function
@@ -14,9 +14,9 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		return (length_of_sub);
 	}
-	while (*s && strchr(accept, s++))
+	while (*s && strchr(accept, *s++))
 	{
 		length_of_sub++;
 	}
-	return(lenth_of_sub);
+	return(length_of_sub);
 }
