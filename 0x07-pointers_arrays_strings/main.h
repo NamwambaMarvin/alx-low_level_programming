@@ -48,3 +48,9 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 
 #endif
+#ifndef _PUTCHAR_
+#define _PUTCHAR_
+
+int _putchar(char c);
+
+#endif
