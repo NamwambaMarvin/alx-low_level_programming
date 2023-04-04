@@ -28,3 +28,23 @@ char *_strchr(char *s, char c);
 char *_strpbrk(char *s, char *accept);
 
 #endif
+#ifndef _SUBSTRING_
+#define _SUBSTRING_
+
+char *_strstr(char *haystack, char *needle);
+
+#endif
+
+#ifndef _CHESS_
+#define _CHESS_
+
+void print_chessboard(char (*a)[8]);
+
+#endif
+
+#ifndef _MULTIPLY_
+#define _MULTIPLY_
+
+void print_diagsums(int *a, int size);
+
+#endif
