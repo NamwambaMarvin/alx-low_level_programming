@@ -15,7 +15,7 @@ void print_diagsums(int *a, int size)
 	_putchar(total + '0');
 	_putchar(',');
 	_putchar(' ');
-	for (j = size; j <= size; j--)
+	for (j = size; j >= 0; j--)
 	{
 		total_b += a[j][j];
 	}
