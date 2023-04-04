@@ -40,3 +40,9 @@ char *string_toupper(char *);
 char *cap_string(char *);
 
 #endif
+#ifndef _LEET_
+#define _LEET_
+
+char *leet(char *);
+
+#endif
