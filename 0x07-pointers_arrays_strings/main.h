@@ -22,3 +22,9 @@ unsigned int _strspn(char *s, char *accept);
 char *_strchr(char *s, char c);
 
 #endif
+#ifndef _STRBRK_
+#define _STRBRK_
+
+char *_strpbrk(char *s, char *accept);
+
+#endif
