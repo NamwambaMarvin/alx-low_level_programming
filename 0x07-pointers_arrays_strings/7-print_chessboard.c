@@ -17,6 +17,10 @@ void print_chessboard(char (*a)[8])
 		{
 			_putchar(a[i][j]);
 		}
+		if (i == 7)
+		{
+			continue;
+		}
 		_putchar('\n');
 	}
 }
