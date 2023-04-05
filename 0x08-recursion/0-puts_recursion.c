@@ -5,7 +5,9 @@
  */
 void _puts_recursion(char *s)
 {
-	if (s > 'z')
+	char m = s;
+
+	if (m > 'z')
 	{
 		return;
 	}
