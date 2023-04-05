@@ -5,7 +5,7 @@
  */
 void _puts_recursion(char *s)
 {
-	if (c > 122)
+	if (s > 122)
 	{
 		return;
 	}
