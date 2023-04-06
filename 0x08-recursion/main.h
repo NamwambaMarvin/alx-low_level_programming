@@ -47,3 +47,9 @@ int is_prime_number(int n);
 int _putchar(char c);
 
 #endif
+#ifndef _D_
+#define _D_
+
+int prime_detect(int j, int m);
+
+#endif
