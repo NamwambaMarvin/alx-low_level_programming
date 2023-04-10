@@ -9,11 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int result, i = 0;
+	int result, i = 1;
 
 	while (argc >= i)
 	{
-		if ((*argv[i] > 'a' && *argv[i] < 'z') || (*argv[i] > 'A' && *argv[i] < 'Z'))
+		if (!(*argv[i] >= '0' && *argv[i] <= '9'))
 		{
 			printf("Error\n");
 			break;
