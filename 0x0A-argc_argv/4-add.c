@@ -10,10 +10,14 @@
 int main(int argc, char *argv[])
 {
 	int result, i = 1;
-
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
 	while (argc >= i)
 	{
-		if (!(*argv[i] >= '0' && *argv[i] <= '9'))
+		if ((*argv[i] > 'a' && *argv[i] <= 'z') || (*argv[i] > 'A' && *argv[i] < 'Z'))
 		{
 			printf("Error\n");
 			break;
