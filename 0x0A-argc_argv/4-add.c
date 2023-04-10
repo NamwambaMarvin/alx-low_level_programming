@@ -4,7 +4,7 @@
 /**
  * main - Adds two postive integes
  * @argc: Number of arguments
- * @argv: Ar`guments passed to the program
+ * @argv: Arguments passed to the program
  * Return: Zero on success, 1 on failure
  */
 int main(int argc, char *argv[])
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	while (argc >= i)
 	{
-		if ((*argv[i] > 'a' && *argv[i] <= 'z') || (*argv[i] > 'A' && *argv[i] < 'Z'))
+		if ((*argv[i] > 0 && *argv[i] < 48) || (*argv[i] > 58 && *argv[i] < 127))
 		{
 			printf("Error\n");
 			break;
