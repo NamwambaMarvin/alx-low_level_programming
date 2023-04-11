@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	while (argc >= i)
+	while ((argc + 1) >= i)
 	{
 		if ((*argv[i] > 0 && *argv[i] < 48) || (*argv[i] > 58 && *argv[i] < 127))
 		{
