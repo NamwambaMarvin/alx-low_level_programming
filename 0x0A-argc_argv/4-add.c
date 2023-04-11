@@ -32,8 +32,7 @@ int main(int argc, char *argv[])
 		if (i == argc)
 		{
 			printf("%d\n", result);
-			return (0);
 		}
 	}
-	return (1);
+	return (0);
 }
