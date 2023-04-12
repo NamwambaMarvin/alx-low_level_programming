@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	{
 		*dupstring = *str;
 		dupstring++;
-		str++
+		str++;
 		len--;
 	}
 	return (dupstring);
