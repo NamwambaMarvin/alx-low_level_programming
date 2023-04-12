@@ -3,6 +3,6 @@
 char *create_array(unsigned int size, char c);
 #endif
 #ifndef _PUTCHAR_
-#define
+#define _PUTCHAR_
 int _putchar(char c);
 #endif
