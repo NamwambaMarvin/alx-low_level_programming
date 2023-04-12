@@ -10,6 +10,8 @@ char *create_array(unsigned int size, char c)
 {
 	char *array;
 
+	int index;
+
 	if (size == 0)
 	{
 		return (NULL);
@@ -19,6 +21,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	array = c;
+	for (index = 0, index < size, index++)
+	{
+		array[index] = c;
+	}
 	return (array);
 }
