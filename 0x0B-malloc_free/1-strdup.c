@@ -6,7 +6,7 @@
  * @str: String that will be copied
  * Return: Pointer to newly allocated space
  */
-char *_strdup(char *str)
+char *_strdup(const char *str)
 {
 	char *dupstring;
 
