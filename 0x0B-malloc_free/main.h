@@ -8,7 +8,7 @@ int _putchar(char c);
 #endif
 #ifndef _WWNI_
 #define _WWNI_
-char *_strdup(char *str);
+char *_strdup(const char *str);
 #endif
 #ifndef _RISK_
 #define _RISK_
