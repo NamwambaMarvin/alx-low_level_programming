@@ -21,8 +21,8 @@ char *_strdup(char *str)
 	while (len)
 	{
 		*dupstring = *str;
-		*dupstring++;
-		*str++
+		dupstring++;
+		str++
 		len--;
 	}
 	return (dupstring);
