@@ -18,6 +18,10 @@ char *_strdup(char *str)
 	}
 	len = strlen(str);
 	dupstring = (void *)malloc((sizeof(char) * len) + 1);
+	if(!dupstring)
+	{
+		return (NULL)
+	}
 	for (i = 0; i <= len; i++)
 	{
 		dupstring[i] = str[i];
