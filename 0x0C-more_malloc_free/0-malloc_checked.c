@@ -8,5 +8,5 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	(void *)malloc(b);
+	malloc(b);
 }
