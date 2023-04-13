@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	dupstring = (void *)malloc((sizeof(char) * len) + 1);
 	if(!dupstring)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	for (i = 0; i <= len; i++)
 	{
