@@ -20,12 +20,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	if (!*s1 || !*s2)
+	total_len = strlen(s1) + strlen(s2);
+	newstring = malloc((sizeof(char) * total_len) + 1);
+	if (!newstring)
 	{
 		return (NULL);
 	}
-	total_len = strlen(s1) + strlen(s2);
-	newstring = malloc((sizeof(*s1) * total_len) + 1);
 	for (index = 0; index < total_len; index++)
 	{
 		newstring[index] = s1[index];
