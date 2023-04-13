@@ -6,11 +6,11 @@
  * @str: String that will be copied
  * Return: Pointer to newly allocated space
  */
-char *_strdup(const char *str)
+char *_strdup(char *str)
 {
 	char *dupstring;
 
-	int len;
+	unsigned int len, i;
 
 	if (str == NULL)
 	{
@@ -18,12 +18,9 @@ char *_strdup(const char *str)
 	}
 	len = strlen(*str);
 	dupstring = malloc(sizeof(*str) * len);
-	while (len)
+	for (i = 0; i <= len; i++)
 	{
-		*dupstring = *str;
-		dupstring++;
-		str++;
-		len--;
+		dupstring[i] = str[i];
 	}
 	return (dupstring);
 }
