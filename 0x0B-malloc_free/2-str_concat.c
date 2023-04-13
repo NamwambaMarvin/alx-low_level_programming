@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		newstring[index] = s1[index];
 		if (index == strlen(s1))
 		{
-			int s2len = 0;
+			unsigned int s2len = 0;
 
 			while (s2len < strlen(s2))
 			{
