@@ -1,6 +1,6 @@
 #ifndef _PUTCHAR_
 #define _PUTCHAR_
-_putchar(char c);
+char _putchar(char c);
 #endif
 #ifndef _MAL_
 #define _MAL_
