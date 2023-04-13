@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	}
 	len = strlen(str);
 	dupstring = (void *)malloc((sizeof(char) * len) + 1);
-	if(!dupstring)
+	if (!dupstring)
 	{
 		return (NULL);
 	}
