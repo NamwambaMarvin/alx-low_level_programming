@@ -11,7 +11,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int index, lens1, lens2, total_len;
+	unsigned int index, lens1, lens2, total_len, indexS2;
 	char *newstring;
 
 	lens1 = strlen(s1);
@@ -23,32 +23,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (n >= lens2)
 		newstring = malloc(sizeof(char) * (lens1 + lens2 + 1));
-	newstring = malloc(sizeof(char) * (lens1 + n + 1));
+	if (n < lens2)
+		newstring = malloc(sizeof(char) * (lens1 + n + 1));
 	if (!newstring)
 		return (NULL);
-	for (index = 0; index <= total_len ; index++)
+	for (index = 0; index < lens1 ; index++)
 	{
 		newstring[index] = s1[index];
-		if (index == lens1)
-		{
-			int i = 0;
-
-			if (n >= lens2)
-			{
-				while (s2[i] != '\0')
-				{
-					newstring[index++] = s2[i++];
-				}
-				newstring[index++] = '\0';
-				break;
-			}
-			while (n)
-			{
-				newstring[index++] = s2[i++];
-				n--;
-			}
-			newstring[index++] = '\0';
-			break;
-		}
 	}
-	return (newstring); }
+	for (indexS2 = 0; indexS2 < lens2; indexS2++)
+	{
+		newstring[index++] = s2[indexS2];
+	}
+	newstring[index++] = '\0';
+	return (newstring);
+}
