@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * _calloc -Allocate memory for nmemb
- * @nmeb: Numbers of the arraay
- * @size - size of the array
+ * @nmemb: Numbers of the arraay
+ * @size: - size of the array
  * Return: Pointer to th array
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
