@@ -21,7 +21,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	newstring = malloc(sizeof(char) * (lens1 + lens2 + 1));
+	if (n >= lens2)
+		newstring = malloc(sizeof(char) * (lens1 + lens2 + 1));
+	newstring = malloc(sizeof(char) * (lens1 + n + 1));
 	if (!newstring)
 		return (NULL);
 	for (index = 0; index <= total_len ; index++)
@@ -49,5 +51,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			break;
 		}
 	}
-	return (newstring);
-}
+	return (newstring); }
