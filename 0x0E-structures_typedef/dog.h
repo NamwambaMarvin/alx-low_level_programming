@@ -1,3 +1,4 @@
+typedef struct dog dog_t
 #ifndef _DOG_
 #define _DOG_
 /**
@@ -21,4 +22,3 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 #define _PRTDG_
 void print_dog(struct dog *d);
 #endif
-typedef struct dog dog_t
