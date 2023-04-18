@@ -1,4 +1,7 @@
+#ifndef _DGT_
+#define _DGT_
 typedef struct dog dog_t;
+#endif
 #ifndef _DOG_
 #define _DOG_
 /**
