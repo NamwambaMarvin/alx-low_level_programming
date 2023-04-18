@@ -17,3 +17,7 @@ struct dog
 #define _INIT_DOG_
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
+#ifndef _PRTDG_
+#define _PRTDG_
+void print_dog(struct dog *d);
+#endif
