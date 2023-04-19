@@ -6,3 +6,7 @@ void print_name(char *name, void (*f)(char*));
 #define _ARRAYIT__
 void array_iterator(int *array, size_t size, void (*action)(int));
 #endif
+#ifndef _PUTCHAR_
+#define _PUTCHAR_
+int _putchar(char c);
+#endif
