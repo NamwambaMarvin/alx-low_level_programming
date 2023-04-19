@@ -2,8 +2,8 @@
 #define _PRINT_
 void print_name(char *name, void (*f)(char*));
 #endif
-#ifndef _ARRAYIT__
-#define _ARRAYIT__
+#ifndef _ARRAYIT_
+#define _ARRAYIT_
 void array_iterator(int *array, size_t size, void (*action)(int));
 #endif/*
 #ifndef _PUTCHAR_
