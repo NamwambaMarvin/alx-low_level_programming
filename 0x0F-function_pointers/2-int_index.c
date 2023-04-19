@@ -8,5 +8,14 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	int index;
 
+	if (size < 1 || !array || !cmp)
+		return (NULL);
+	for (index = 0; index < size; index++)
+	{
+		if (cmp(*(array++)))
+			return (index);
+	}
+	return (-1);
 }
