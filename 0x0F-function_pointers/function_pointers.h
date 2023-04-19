@@ -4,7 +4,7 @@ void print_name(char *name, void (*f)(char*));
 #endif
 #ifndef _ARRAYIT_
 #define _ARRAYIT_
-void array_iterator(int *array, size_t size, void (*action)(int));
+void array_iterator(int *array, unsigned int size, void (*action)(int));
 #endif/*
 #ifndef _PUTCHAR_
 #define _PUTCHAR_
