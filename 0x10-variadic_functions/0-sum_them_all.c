@@ -2,7 +2,7 @@
 /**
  * sum_them_all - Prints sum of all Parameters
  * @n: Number of arguments to be passed to the function
- * Return : Sum of all the integers
+ * Return: Sum of all the integers
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -10,6 +10,7 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	va_list numbers;
 	int i, total = 0;
+
 	va_start(numbers, n);
 	for (i = 0; i < n; i++)
 	{
