@@ -1,3 +1,5 @@
+#ifndef _STRUCT_
+#define _STRUCT_
 /**
  * struct op - Struct op
  *
@@ -6,9 +8,10 @@
  */
 typedef struct op
 {
-        char *op;
-        int (*f)(int a, int b);
+	char *op;
+	int (*f)(int a, int b);
 } op_t;
+#endif
 #ifndef _STR_
 #define _STR_
 #include <stdlib.h>
