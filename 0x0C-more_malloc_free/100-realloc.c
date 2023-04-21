@@ -6,22 +6,29 @@
  * @ptr: Pointer to the old memory
  * @old_size: Size of old allocated data
  * @new_size: Size of newly allocated memory
+ * Return: Pointer to newly allocated memory
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	if (!new_size)
+	if (!old_size || !new_size)
+	{
+		return (NULL);
+	}
+	if (!new_size && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
-	} else if (!ptr)
+	}
+	if (!ptr)
 	{
 		return (malloc(new_size));
-	} else if (new_size <= old_size)
+	}
+	if (new_size == old_size)
 	{
 		return (ptr);
-	} else
-	{
+	}
 		void *new_pointer = malloc(new_size);
+
 		assert((ptr) && (new_size > old_size));
 		if (new_pointer)
 		{
@@ -29,5 +36,4 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			free(ptr);
 		}
 		return (new_pointer);
-	}
 }
