@@ -19,8 +19,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 	} else
 	{
-		assert((ptr) && (new_size > old_size));
 		void *new_pointer = malloc(new_size);
+		assert((ptr) && (new_size > old_size));
 		if (new_pointer)
 		{
 			memcpy(new_pointer, ptr, old_size);
