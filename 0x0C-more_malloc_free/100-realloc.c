@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <assert.h>
 /**
  * _realloc - Implementations of realloc
  * @ptr: Pointer to the old memory
