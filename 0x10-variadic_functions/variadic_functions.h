@@ -1,6 +1,8 @@
 #ifndef _STDARG_
 #define _STDARG_
 #include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 #endif
 #ifndef _PUTCHAR_
 #define _PUTCHAR_
