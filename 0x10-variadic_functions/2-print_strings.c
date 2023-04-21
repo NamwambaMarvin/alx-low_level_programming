@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * print_string - Printsnumerst followed by a nrew line
+ * print_strings - Printsnumerst followed by a nrew line
  * @separator: string to be printed between strings
  * @n: the number of strings passed to the function
  */
