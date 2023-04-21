@@ -1,6 +1,8 @@
 #ifndef _PUTCHAR_
 #define _PUTCHAR_
+#include <string.h>
 char _putchar(char c);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 #endif
 #ifndef _MAL_
 #define _MAL_
