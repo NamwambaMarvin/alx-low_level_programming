@@ -18,9 +18,12 @@ void print_all(const char * const format, ...)
 				case 's':
 					m = va_arg(prn, char *);
 					if (m)
+					{
 						printf("%s", m);
-					if (!m)
+					} else
+					{
 						printf("(nil)");
+					}
 					break;
 				case 'i':
 					printf("%d", va_arg(prn, int));
