@@ -6,7 +6,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, total = 0, total_b = 0;
+	int i, j, *total = 0, *total_b = 0;
 
 	for (i = 0; i < size; i++)
 	{

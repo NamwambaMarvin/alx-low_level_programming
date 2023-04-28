@@ -1,0 +1,12 @@
+#!/bin/bash
+files='files.txt'
+while read file;
+	do
+		if [[ -n $file ]];
+		then
+			gcc -c $file
+				echo "Object file created"
+		else
+			echo "File not found"
+		fi
+	done<$files

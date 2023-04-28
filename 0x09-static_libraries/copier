@@ -1,0 +1,13 @@
+#!/bin/bash
+files='files.txt'
+while read line;
+do
+	if [[ -n $line ]];
+	then
+		find / -type f -name $line -exec cp {} /alx-low_level_programming/0x09-static_libraries/ \;
+		echo "Copied Successsfully";
+	else
+		echo "::: Enter File name :::"
+	fi
+	echo "Finished"
+done <$files
