@@ -1,7 +1,6 @@
 #ifndef _LK
 #define _LK
 int _putchar(char c);
-long unsigned int print_list(const list_t *h);
 /**
  * struct list_s - Singly linked list
  * @str: string (malloc'ed string)
@@ -15,4 +14,8 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
+#endif
+#ifndef _LI
+#define _LI
+size_t print_list(const list_t *h);
 #endif
