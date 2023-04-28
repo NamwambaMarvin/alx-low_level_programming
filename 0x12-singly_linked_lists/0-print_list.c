@@ -5,7 +5,7 @@
  * @h: Linked list to be printed
  * Return: Number of nodes
  */
-size_t print_list(const list_t *h)
+long unsigned int print_list(const list_t *h)
 {
 	const list_t *p = h;
 	unsigned int number;
