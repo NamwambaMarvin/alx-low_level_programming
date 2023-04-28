@@ -10,9 +10,9 @@ size_t print_list(const list_t *h)
 	const list_t *p = h;
 	unsigned int number = 0;
 
-	while(p != NULL)
+	while (p != NULL)
 	{
-		if (!(p -> str))
+		if (!(p->str))
 		{
 			printf("[0] (nil)\n");
 		} else
@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", p->len, p->str);
 		}
 		number++;
-		p = p -> next;
+		p = p->next;
 	}
 	return (number);
 }
