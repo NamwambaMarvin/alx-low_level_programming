@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * exe - Prints smthin
+ * exec - Prints smthin
  */
 void exec(void)
 {
