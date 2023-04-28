@@ -1,5 +1,6 @@
 #ifndef _LK
 #define _LK
+#include <stddef.h>
 int _putchar(char c);
 /**
  * struct list_s - Singly linked list
@@ -19,4 +20,5 @@ typedef struct list_s
 #define _LI
 size_t list_len(const list_t *h);
 size_t print_list(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
 #endif
