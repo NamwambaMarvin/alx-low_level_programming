@@ -18,7 +18,7 @@ int pop_listint(listint_t **head)
 	}
 	else
 	{
-		return;
+		return (0);
 	}
 	return (value_in_head);
 }
