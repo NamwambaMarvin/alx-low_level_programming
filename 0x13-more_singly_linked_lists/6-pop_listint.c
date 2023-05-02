@@ -16,5 +16,9 @@ int pop_listint(listint_t **head)
 		free(*head);
 		*head = another_head;
 	}
+	else
+	{
+		return;
+	}
 	return (value_in_head);
 }
