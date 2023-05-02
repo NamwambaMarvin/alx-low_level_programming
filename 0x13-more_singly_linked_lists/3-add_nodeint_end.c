@@ -3,6 +3,7 @@
  * add_nodeint_end - Adds node at the end of the linked list
  * @head: Head of the linked list
  * @n: Data to be added at in the linked list
+ * Return: Pointer to the newly created node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
@@ -10,6 +11,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		listint_t *newnode = (listint_t *)malloc(sizeof(listint_t));
 		listint_t *new;
+
 		if (!newnode)
 			return (NULL);
 		newnode->n = n;
