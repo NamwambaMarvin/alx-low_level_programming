@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * free_listint - Frees a linked list
  * @head: Head of the linked list
