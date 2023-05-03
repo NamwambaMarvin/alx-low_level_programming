@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stddef.h>
 /**
  * get_nodeint_at_index - Returns the nth noe of a singly linked list
  * @head: Head of the linked list
@@ -7,7 +8,7 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	int k = 0;
+	size_t k = 0;
 
 	if (head == NULL)
 		return (NULL);
@@ -15,10 +16,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (index == k)
 		{
-			return (k);
+			return (head);
 		}
 		head = head->next;
-		count++;
+		k++;
 	}
 	return (NULL);
 }
