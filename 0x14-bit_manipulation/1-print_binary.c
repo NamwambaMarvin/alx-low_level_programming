@@ -3,7 +3,6 @@
  * print_binary - Prints the binary representation of a number
  * @n: The number
  */
-void man(unsigned long int m);
 void print_binary(unsigned long int n)
 {
 	if (n == 0)
@@ -13,6 +12,10 @@ void print_binary(unsigned long int n)
 	}
 	man(n);
 }
+/**
+ * man - Manipulates the bit to wat we want
+ * @m: Intergeer to be binarised
+ */
 void man(unsigned long int m)
 {
 	if (m < 1)
