@@ -3,18 +3,20 @@
  * print_binary - Prints the binary representation of a number
  * @n: The number
  */
+void man(unsigned long int m);
 void print_binary(unsigned long int n)
 {
-	int bit;
-	char t;
-	unsigned int size = sizeof(unsigned long int) * 8;
-	unsigned long long cover = (unsigned long long)
-		1 << (sizeof(unsigned long int) * 8 - 1);
-
-	for (bit = 0; bit < size; bit++)
+	if (n == 0)
 	{
-		t = (n & cover) ? '1' : '0';
-		_putchar(bit);
-		cover >>= 1;
+		_putchar('0');
+		return;
 	}
+	man(n);
+}
+void man(unsigned long int m)
+{
+	if (m < 1)
+		return;
+	man(m >> 1);
+	(m & 1) ? _putchar('1') : _putchar('0');
 }
