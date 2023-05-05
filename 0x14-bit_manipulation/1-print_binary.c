@@ -5,14 +5,16 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int cover;
-	int bit = 0;
+	int bit;
+	char t;
+	unsigned int size = sizeof(unsigned long int) * 8;
+	unsigned long long cover = (unsigned long long)
+		1 << (sizeof(unsigned long int) * 8 - 1);
 
-	cover = 1 << (sizeof(unsigned long int) * 8 - 1);
-	while (cover != 0)
+	for (bit = 0; bit < size; bit++)
 	{
-		bit = (n & cover) == 0 ? 0 : 1;
-		_putchar(bit + '0');
+		t = (n & cover) ? '1' : '0';
+		_putchar(bit);
 		cover >>= 1;
 	}
 }
