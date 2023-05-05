@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 
 	while (cover != 0)
 	{
-		bit = (n & mask) == 0 ? 0 : 1;
+		bit = (n & cover) == 0 ? 0 : 1;
 		_putchar(bit + '0');
 		cover >>= 1;
 	}
