@@ -1,6 +1,10 @@
 #ifndef _PROTS
 #define _PROTS
 #include <unistd.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
+#include <sys/uio.h>
+#include <string.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
