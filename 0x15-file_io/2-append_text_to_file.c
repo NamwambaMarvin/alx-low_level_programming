@@ -8,7 +8,6 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file_desc;
-	int wr;
 
 	if (!filename)
 	{
