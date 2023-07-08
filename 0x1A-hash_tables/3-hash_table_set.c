@@ -1,3 +1,4 @@
+#include <string.h>
 #include "hash_tables.h"
 /**
  * hash_table_set - Adds a value to the hash table
